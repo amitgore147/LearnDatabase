@@ -1,43 +1,15 @@
-(function executeRule(current, previous /*null when async*/) {
-    // Check if the incident was newly assigned
-    if (current.assigned_to != previous.assigned_to && current.assigned_to != '') {
-        var grUserRole = new GlideRecord('sys_user_has_role');
-        grUserRole.addQuery('role.name', 'incident_support');
-        grUserRole.addQuery('user', current.assigned_to);
-        grUserRole.query();
+When filling out an evaluation form as a .NET full stack developer, here are some potential responses to the question "What do you think went well?":
 
-        // If the user doesn't already have the role, assign it
-        if (!grUserRole.next()) {
-            var role = new GlideRecord('sys_user_has_role');
-            role.initialize();
-            role.user = current.assigned_to;
-            role.role = 'incident_support';
-            role.insert();
-        }
-    }
-})(current, previous);
+1. **Successful Project Delivery**: "I successfully delivered key projects within the expected timeframes, meeting client expectations while ensuring code quality and scalability."
 
+2. **Improved Application Performance**: "I worked on optimizing application performance, reducing load times, and improving overall efficiency, leading to better user experiences."
 
+3. **Collaboration and Teamwork**: "I effectively collaborated with cross-functional teams, including designers and QA, ensuring smooth communication and coordination across departments."
 
+4. **Full-Stack Expertise**: "I was able to leverage my full-stack skills (both front-end and back-end) to troubleshoot issues quickly and provide end-to-end solutions that addressed client and stakeholder needs."
 
-(function executeRule() {
-    // Query all users who have the incident_support role
-    var grUserHasRole = new GlideRecord('sys_user_has_role');
-    grUserHasRole.addQuery('role.name', 'incident_support');
-    grUserHasRole.query();
+5. **Continuous Learning and Adaptability**: "I stayed updated with the latest .NET frameworks and technologies, adapting to new challenges and implementing best practices in both development and deployment."
 
-    while (grUserHasRole.next()) {
-        var userId = grUserHasRole.user;
+6. **Bug Fixes and Code Maintenance**: "I reduced technical debt by proactively addressing bugs and maintaining code quality through refactoring, improving system stability and maintainability."
 
-        // Check if the user has any active incidents assigned
-        var grIncident = new GlideRecord('incident');
-        grIncident.addActiveQuery(); // Only check active incidents
-        grIncident.addQuery('assigned_to', userId);
-        grIncident.query();
-
-        // If no incidents are assigned to the user, remove the role
-        if (!grIncident.hasNext()) {
-            grUserHasRole.deleteRecord(); // Remove the role
-        }
-    }
-})();
+This response can be tailored to reflect your specific contributions or project successes.
