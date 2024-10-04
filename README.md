@@ -1,5 +1,13 @@
-In response to the question "What could have been better?" and considering the issue of unclear and changing requirements in your project, you could frame your response like this:
+Here’s how you could frame your additional comments to highlight both your project achievements and your participation in the ACON Bridge program:
 
-"One area that could have been improved was the clarity and stability of project requirements. Frequently, the requirements were not fully defined at the outset, and changes were introduced after development had begun. This led to rework and delays in meeting deadlines. Moving forward, I believe we could benefit from more structured requirement gathering and clear documentation before starting development. Additionally, implementing a more formal change management process could help minimize disruptions and ensure that changes are handled efficiently."
+---
 
-This highlights the challenge while showing a constructive approach to improving the process.
+**Additional Comments:**
+
+Throughout this project, I successfully delivered key functionalities despite challenges with changing requirements, demonstrating adaptability and problem-solving skills. I contributed to optimizing application performance, improved code quality, and maintained seamless collaboration with the team to meet project goals.
+
+Additionally, I was selected for the ACON Bridge program, where I am currently undergoing training in ServiceNow, further expanding my technical skill set. I have also completed external certifications, including Certified ServiceNow Administrator (CSA) and IT Service Management (ITSM), which position me to contribute more effectively to upcoming projects and provide value in both .NET and ServiceNow environments.
+
+---
+
+This response highlights your achievements and additional professional development, positioning you as someone who is continuously improving and adding value.
